@@ -1,0 +1,143 @@
+body{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+#recipes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button, #submit{
+    font-size: 1.25rem;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 1.25rem;
+    gap: 10px;
+}
+
+#cookbook{
+    font-size: 1.5rem;
+}
+
+.menus{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.searchfield{
+    display: flex;
+    flex-direction: column;
+}
+
+#search{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+button, #submit, #search{
+    background-color: #f0f0f0;
+}
+
+.hidemenu{
+    display: none;
+}
+
+#expand{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: fit-content;
+}
+
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: 2px #f0f0f0 solid;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.cardtext{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: baseline;
+    gap: 10px;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+#modal{
+    position: absolute;
+    top: 20px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 1000px;
+    width: 80%;
+    background-color: white;
+    border: 2px #f0f0f0 solid;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button{
+    width: fit-content;
+}
+
+.hidemodal{
+    display: none;
+}
+
+@media screen and (min-width: 800px){
+    .hidemenu{
+        display: flex;
+    }
+
+    #expand{
+        display: none;
+    }
+
+    .menus{
+        position: relative;
+        max-width: 400px;
+        height: 100vh;
+        padding-top: 100px;
+        gap: 30px;
+    }
+
+    body{
+        display: flex;
+    }
+
+    #recipes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: normal;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4240118de1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="menus" class="hidemenu menus">
+        <button id="cookbook">My Cookbook</button>
+        <form id="form">
+            <div class="searchfield">
+                <label for="search">Recipe name</label>
+                <input type="search" id="search" name="search">
+            </div>
+            <div>
+                <label for="category">Category</label>
+                <div class="radiobutton">
+                    <input type="radio" id="all" name="category" value="All">
+                    <label for="all">All</label>
+                </div>
+                <div class="radiobutton">
+                    <input type="radio" id="veg" name="category" value="Vegetarian">
+                    <label for="veg">Vegetarian</label>
+                </div>
+                <div class="radiobutton">
+                    <input type="radio" id="vegan" name="category" value="Vegan">
+                    <label for="vegan">Vegan</label>
+                </div>
+            </div>
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </div>
+    <div id="recipes">
+        <!-- example card -->
+        <div class="card">
+            <img src="https://placecats.com/300/150" alt="">
+            <div class="cardtext">
+                <h1>recipe name</h1>
+                <button>
+                    view recipe
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <button id="expand"><i class="fa-solid fa-bars"></i></button>
+    <div id="modal" class="hidemodal">
+        <div class="controls">
+            <button id="save">Save to Cookbook</button>
+            <button id="close"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div id="recipe">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
