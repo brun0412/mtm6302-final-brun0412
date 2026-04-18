@@ -16,26 +16,19 @@
                 <input type="search" id="search" name="search">
             </div>
             <div>
-                <label for="category">Category</label>
-                <div class="radiobutton">
-                    <input type="radio" id="all" name="category" value="All">
-                    <label for="all">All</label>
-                </div>
-                <div class="radiobutton">
-                    <input type="radio" id="veg" name="category" value="Vegetarian">
-                    <label for="veg">Vegetarian</label>
-                </div>
-                <div class="radiobutton">
-                    <input type="radio" id="vegan" name="category" value="Vegan">
-                    <label for="vegan">Vegan</label>
-                </div>
+                <label for="categories">Category</label>
+            <select name="categories" id="category">
+                <option value="all">All</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+            </select>
             </div>
-            <input type="submit" value="submit" id="submit">
+            <input type="submit" value="Search" id="submit">
         </form>
     </div>
     <div id="recipes">
         <!-- example card -->
-        <div class="card">
+        <!-- <div class="card">
             <img src="https://placecats.com/300/150" alt="">
             <div class="cardtext">
                 <h1>recipe name</h1>
@@ -43,7 +36,7 @@
                     view recipe
                 </button>
             </div>
-        </div>
+        </div> -->
     </div>
     
     <button id="expand"><i class="fa-solid fa-bars"></i></button>

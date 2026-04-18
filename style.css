@@ -37,6 +37,7 @@ button, #submit{
     position: fixed;
     bottom: 0px;
     width: 100%;
+    background-color: white;
 }
 
 .searchfield{
@@ -52,7 +53,7 @@ button, #submit{
 }
 
 button, #submit, #search{
-    background-color: #f0f0f0;
+    background-color: skyblue;
 }
 
 .hidemenu{
@@ -71,9 +72,10 @@ button, #submit, #search{
     display: flex;
     flex-direction: column;
     padding: 0;
-    border: 2px #f0f0f0 solid;
+    border: 2px skyblue solid;
     border-radius: 15px;
     height: fit-content;
+    margin: 1rem;
 }
 
 .cardtext{
@@ -92,13 +94,14 @@ h1{
 #modal{
     position: absolute;
     top: 20px;
-    margin: auto;
+    left: 50%;
+    transform: translate(-50%,0);
     padding: 10px;
     border-radius: 15px;
     max-width: 1000px;
     width: 80%;
     background-color: white;
-    border: 2px #f0f0f0 solid;
+    border: 2px skyblue solid;
 }
 
 .controls{
@@ -125,7 +128,8 @@ h1{
 
     .menus{
         position: relative;
-        max-width: 400px;
+        width: 400px;
+        flex-shrink: 0;
         height: 100vh;
         padding-top: 100px;
         gap: 30px;
