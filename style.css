@@ -36,8 +36,10 @@ button, #submit{
     padding: 10px;
     position: fixed;
     bottom: 0px;
-    width: 100%;
+    left: 0;
+    width: calc(100% - 20px);
     background-color: white;
+    padding-bottom: 5rem;
 }
 
 .searchfield{
