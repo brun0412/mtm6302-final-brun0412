@@ -132,6 +132,8 @@ $cookbook.addEventListener('click',function(){
 
 //Gets saved cookbook from localstorage on opening the site
 const mycookbook=JSON.parse(localStorage.getItem('mycookbook'));
+if(mycookbook){
 cookbook=mycookbook;
+}
 
 //https://www.themealdb.com/api/json/v1/1/search.php?s=soup
